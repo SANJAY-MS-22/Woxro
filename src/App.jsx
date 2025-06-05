@@ -27,7 +27,7 @@ const App = () => {
     let imageCounter = 1;
     cubesFaces.forEach((face) => {
       const img = document.createElement("img");
-      img.src = `/images/img${imageCounter}.jpg`;
+      img.src = `${import.meta.env.BASE_URL}images/img${imageCounter}.jpg`;
       img.alt = `Cube image ${imageCounter}`;
       face.appendChild(img);
       imageCounter++;
